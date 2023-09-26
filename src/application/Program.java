@@ -19,7 +19,7 @@ public class Program {
 		
 		System.out.println(seller);
 		
-		System.out.println("\n--- TEST One: seller findByDepartment ----");
+		System.out.println("\n--- TEST Two: seller findByDepartment ----");
 		
 		
 		Department department = new Department(2, null);
@@ -28,5 +28,13 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("\n--- TEST Tree: seller findAll ----");
+
+		list = sellerDao.findALL();
+		for (Seller obj : list) {
+			System.out.println(obj);
+		}
+
 	}
 }
